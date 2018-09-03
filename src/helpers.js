@@ -1,4 +1,4 @@
-export function formatPrice(cents) {
+export function formatPrice(cents) { // no hacemos export 'default' xxx porque queremos poder exportar más de un componente en este archivo
   return (cents / 100).toLocaleString("en-US", {
     style: "currency",
     currency: "USD"
